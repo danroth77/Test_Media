@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<script language="javascript" type="text/javascript">
@@ -12,7 +13,7 @@
 
 	<body>
 		<!--<embed name="emb" src="C:/Users/dr/Documents/Mark-It/Media/Demo.mp4",--> 
-		<embed name="emb" src="file://C:/Users/dr/Documents/Mark-It/Media/Demo.mp4", 
+		<embed name="demo" src="file://C:/Users/dr/Documents/Mark-It/Media/Demo.mp4", 
 		BGCOLOR=#COCOCO
 		width="400" height="300" 
 		scale="ToFit"
@@ -23,7 +24,7 @@
 		WMODE = transparent
 		border="100"/>
 	
-	<embed name="emb" src="//www.youtube.com/embed/KU4yvFC6bTA", 
+	<embed id="emb" src="//www.youtube.com/embed/KU4yvFC6bTA", 
 		BGCOLOR=#COCOCO
 		width="400" height="300" 
 		scale="ToFit"
@@ -35,5 +36,10 @@
 		border="100"/>
 
 	</body>
+
+ 			<button onclick="document.getElementById('demo').play()">Play the Audio</button>
+            <button onclick="document.getElementById('demo').pause()">Pause the Audio</button>
+            <button onclick="document.getElementById('demo').volume+=0.1">Increase Volume</button>
+            <button onclick="document.getElementById('demo').volume-=0.1">Decrease Volume</button>
 
 </html>
