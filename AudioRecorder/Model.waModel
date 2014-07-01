@@ -7,11 +7,11 @@
 				"panelColor": "#C3D69B",
 				"panel": {
 					"isOpen": "true",
+					"pathVisible": true,
 					"position": {
 						"X": 25,
 						"Y": 20
-					},
-					"pathVisible": true
+					}
 				}
 			}
 		},
@@ -23,28 +23,31 @@
 	},
 	"dataClasses": [
 		{
-			"collectionName": "DataCollection",
+			"name": "Data",
 			"className": "Data",
+			"collectionName": "DataCollection",
+			"scope": "public",
 			"attributes": [
 				{
 					"name": "ID",
 					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
 					"type": "long",
-					"autosequence": "true",
-					"unique": "true",
-					"primKey": "true"
+					"primKey": true
 				},
 				{
 					"name": "S1",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "string"
 				},
 				{
 					"name": "S2",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "blob"
 				}
 			]
 		}
