@@ -3,6 +3,17 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#audioRecorder1 {
+	 z-index: 2;
+	 width: 758px;
+	 height: 145px;
+	 top: 372px;
+	 left: 55px;
+	
+	 position: absolute;
+	 
+}
+
 #dataGrid1 {
 	 z-index: 1;
 	 width: 300px;
