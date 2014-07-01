@@ -47,7 +47,7 @@
 					"name": "S2",
 					"kind": "storage",
 					"scope": "public",
-					"type": "blob"
+					"type": "string"
 				}
 			]
 		}
